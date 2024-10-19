@@ -37,7 +37,8 @@
 
     const fetchMonAns = async () => {
       const response = await instanceAxios.get('/monans')
-       monans.value = response.data
+      console.log(response.data); 
+      monans.value = response.data
     }
 
     const handleDelete = async (id) => {
